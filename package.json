@@ -1,6 +1,6 @@
 {
   "name": "product",
-  "version": "0.1.20200204",
+  "version": "0.1.20200430",
   "private": true,
   "dependencies": {
     "@capacitor/android": "^1.4.0",

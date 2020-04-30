@@ -5,7 +5,7 @@ import './SpeakerDetail.scss';
 
 import { ActionSheetButton } from '@ionic/core';
 import { IonActionSheet, IonChip, IonIcon, IonHeader, IonLabel, IonToolbar, IonButtons, IonContent, IonButton, IonBackButton, IonPage } from '@ionic/react'
-import { callOutline, callSharp, logoTwitter, logoGithub, logoInstagram, shareOutline, shareSharp } from 'ionicons/icons';
+import {  logoTwitter, logoGithub, logoInstagram } from 'ionicons/icons';
 
 import { connect } from '../data/connect';
 import * as selectors from '../data/selectors';
@@ -89,14 +89,7 @@ const SpeakerDetail: React.FC<SpeakerDetailProps> = ({ speaker }) => {
             <IonButtons slot="start">
               <IonBackButton defaultHref="/tabs/speakers" />
             </IonButtons>
-            <IonButtons slot="end">
-              <IonButton onClick={() => openContact(speaker)}>
-                <IonIcon slot="icon-only" ios={callOutline} md={callSharp}></IonIcon>
-              </IonButton>
-              <IonButton onClick={() => openSpeakerShare(speaker)}>
-                <IonIcon slot="icon-only" ios={shareOutline} md={shareSharp}></IonIcon>
-              </IonButton>
-            </IonButtons>
+            
           </IonToolbar>
         </IonHeader>
 

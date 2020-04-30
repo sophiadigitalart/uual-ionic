@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonHeader, IonToolbar, IonContent, IonPage, IonButtons, IonMenuButton, IonButton, IonIcon, IonDatetime, IonSelectOption, IonList, IonItem, IonLabel, IonSelect, IonPopover } from '@ionic/react';
 import './About.scss';
-import { ellipsisHorizontal, ellipsisVertical } from 'ionicons/icons';
+
 import AboutPopover from '../components/AboutPopover';
 
 interface AboutProps { }
@@ -47,11 +47,7 @@ const About: React.FC<AboutProps> = () => {
             <IonButtons slot="start">
               <IonMenuButton></IonMenuButton>
             </IonButtons>
-            <IonButtons slot="end">
-              <IonButton onClick={presentPopover}>
-                <IonIcon slot="icon-only" ios={ellipsisHorizontal} md={ellipsisVertical}></IonIcon>
-              </IonButton>
-            </IonButtons>
+            
           </IonToolbar>
         </IonHeader>
 

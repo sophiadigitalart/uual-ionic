@@ -137,8 +137,7 @@ const SchedulePage: React.FC<SchedulePageProps> = ({ favoritesSchedule, schedule
       <IonModal
         isOpen={showFilterModal}
         onDidDismiss={() => setShowFilterModal(false)}
-        swipeToClose={true}
-        presentingElement={pageRef.current!}
+      
         cssClass="session-list-filter"
       >
         <SessionListFilter
