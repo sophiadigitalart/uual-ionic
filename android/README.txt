@@ -1,5 +1,3 @@
-# Unity as a Library with Ionic React
-
 1. Export Android Project, from unity
 - open unity
 - switch to Android platform
@@ -16,4 +14,4 @@ project(':unityLibrary').projectDir=new File('C:\\Projects\\UaaLExample\\unity\\
 - add next to dependencies block in build.gradle for :app module
   implementation project(':unityLibrary')
 
-Project prepare
+Project prepared
